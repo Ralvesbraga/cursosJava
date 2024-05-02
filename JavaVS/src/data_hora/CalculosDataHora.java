@@ -15,7 +15,6 @@ public class CalculosDataHora {
 
         LocalDate pastWeekLocalDate = d04.minusDays(7);
         LocalDate nextWeeLocalDate = d04.plusDays(7);
-        LocalDate nextYearLocalDate = d04.plusYears(1);
 
         System.out.println("pastWeekLocalDate = " + pastWeekLocalDate);
         System.out.println("nextWeeLocalDate = " + nextWeeLocalDate);
