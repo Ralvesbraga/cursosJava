@@ -20,9 +20,10 @@ public class Order {
     private List<OrderItem> itens = new ArrayList<>();
 
 
-    public Order(Date moment, OrderStatus status) {
+    public Order(Date moment, OrderStatus status, Client client) {
         this.moment = moment;
         this.status = status;
+        this.client = client;
     }
 
 
@@ -53,6 +54,16 @@ public class Order {
         this.itens.remove(item);
     }
 
+    public Client getClient() {
+        return client;
+    }
+
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+
     public double total(){
         double sum = 0;
         for(OrderItem item : itens){
@@ -79,6 +90,16 @@ public class Order {
         return sb.toString();
 
 
+    }
+
+
+    public List<OrderItem> getItens() {
+        return itens;
+    }
+
+
+    public void setItens(List<OrderItem> itens) {
+        this.itens = itens;
     }
     
 }
