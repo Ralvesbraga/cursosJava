@@ -1,6 +1,6 @@
 package heranca_polimorfismo.z_exemplos_abordados.entities;
 
-public class Account {
+public abstract class Account {
     private Integer number;
     private String holder;
     protected Double balance;
