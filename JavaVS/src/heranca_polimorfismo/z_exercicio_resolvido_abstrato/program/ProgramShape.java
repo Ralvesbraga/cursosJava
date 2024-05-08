@@ -46,7 +46,8 @@ public class ProgramShape {
             System.out.println(String.format("%.2f", s.area()));
             
         }
-        
+
+        sc.close();        
     }
     
 }
