@@ -1,4 +1,4 @@
-package tratamendo_execoes;
+package tratamento_excecoes;
 
 public class Excecoes {
     /*
