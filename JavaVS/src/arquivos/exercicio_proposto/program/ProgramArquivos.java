@@ -15,7 +15,7 @@ public class ProgramArquivos {
         System.out.print("Enter with file path: ");
         String path = sc.nextLine();
         ArrayList<Product> products = new ArrayList<>();
-        ArrayList<String> lines = new ArrayList<>();
+
 
 
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
@@ -35,5 +35,7 @@ public class ProgramArquivos {
         for(Product p : products){
             System.out.println(p);
         }
+
+        sc.close();
     }
 }
