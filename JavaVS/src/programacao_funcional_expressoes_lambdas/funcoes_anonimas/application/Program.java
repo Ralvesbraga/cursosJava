@@ -17,9 +17,8 @@ public class Program {
         list.add(new Product("Tablet", 450.00));
 
 
-        Comparator<Product> comp = (o1, o2) -> { //reduzindo para arrow function
-            return o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
-        };
+        Comparator<Product> comp = (o1, o2) -> o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase()); // Reduzindo ainda mais para uma linha
+        
 
 
         list.sort(comp); //chama a função anonima para ordenar
