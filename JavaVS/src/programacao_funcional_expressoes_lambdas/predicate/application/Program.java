@@ -21,9 +21,7 @@ public class Program {
 
         double min = 100.00;
 
-        Predicate<Product> pred = p -> p.getPrice() >= min; // u,a função anonima que vai receber um produto p, que esse produto tem valor igual ou maior que 100
-
-        list.removeIf(pred); 
+        list.removeIf(p -> p.getPrice() >= min);  
 
         for(Product p : list){
             System.out.println(p);
