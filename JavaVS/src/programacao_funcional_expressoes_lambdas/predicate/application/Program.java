@@ -2,6 +2,7 @@ package programacao_funcional_expressoes_lambdas.predicate.application;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import programacao_funcional_expressoes_lambdas.predicate.entities.Product;
 
@@ -18,7 +19,11 @@ public class Program {
         list.add(new Product("HD case", 80.90));
         list.add(new Product("Mouse", 50.00));
 
-        list.removeIf(Product::nonStaticProductPredicate); //referencia para método, usando isso chama o método da classe product sem precisar de uma instancia 
+        double min = 100.00;
+
+        Predicate<Product> pred = p -> p.getPrice() >= min; // u,a função anonima que vai receber um produto p, que esse produto tem valor igual ou maior que 100
+
+        list.removeIf(pred); 
 
         for(Product p : list){
             System.out.println(p);
