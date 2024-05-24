@@ -17,13 +17,10 @@ public class Program {
         list.add(new Product("Tablet", 450.00));
 
 
-        Comparator<Product> comp = new Comparator<Product>(){ //criação da classe anonima, que irá fazer a mesma coisa que a classe MyComparator
-            @Override
-            public int compare(Product o1, Product o2) {
-                
-                return o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
-            }
+        Comparator<Product> comp = (o1, o2) -> { //reduzindo para arrow function
+            return o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
         };
+
 
         list.sort(comp); //chama a função anonima para ordenar
 
