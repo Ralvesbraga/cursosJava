@@ -1,7 +1,6 @@
 package programacao_funcional_expressoes_lambdas.funcoes_anonimas.application;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 import programacao_funcional_expressoes_lambdas.funcoes_anonimas.entities.Product;
