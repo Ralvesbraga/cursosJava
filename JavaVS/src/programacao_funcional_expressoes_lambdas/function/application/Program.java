@@ -25,10 +25,10 @@ public class Program {
         //Stream para List: .collect(Collectors.toList())
 
         //Transforma toda a lista em stream, usa o map para usar a função em toda a stream, depois converte a stream para list e armazena em uma lista de Strings
-        List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
+        List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
 
         names.forEach(System.out::println);
-        
+
 
         
 
