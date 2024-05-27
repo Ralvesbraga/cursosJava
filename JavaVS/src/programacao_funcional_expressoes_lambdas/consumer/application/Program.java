@@ -2,9 +2,8 @@ package programacao_funcional_expressoes_lambdas.consumer.application;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
 
-import programacao_funcional_expressoes_lambdas.consumer.util.PriceUpdate;
+
 import programacao_funcional_expressoes_lambdas.consumer.entities.Product;
 
 
@@ -21,7 +20,7 @@ public class Program {
         list.add(new Product("Mouse", 50.00));
 
         double factor = 1.1;
-        
+
         list.forEach(p -> p.setPrice(p.getPrice() * factor));
 
 
