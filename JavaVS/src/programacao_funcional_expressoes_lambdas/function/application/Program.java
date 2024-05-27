@@ -2,7 +2,6 @@ package programacao_funcional_expressoes_lambdas.function.application;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import programacao_funcional_expressoes_lambdas.function.entities.Product;
