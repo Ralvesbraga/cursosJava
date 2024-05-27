@@ -12,8 +12,4 @@ public class PriceUpdate implements Consumer<Product>{
         p.setPrice(p.getPrice() * 1.1);
     }
 
-
-    
-    
-
 }
