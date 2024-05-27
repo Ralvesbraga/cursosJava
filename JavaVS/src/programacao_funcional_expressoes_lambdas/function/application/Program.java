@@ -21,14 +21,13 @@ public class Program {
         list.add(new Product("HD case", 80.90));
         list.add(new Product("Mouse", 50.00));
 
-        Function<Product, String> func = p -> p.getName().toUpperCase();
 
         // Função map: é uma função que aplica uma função a todos os elementos de uma stream(Sequencia de dados)
         //Conversões: List para Stream: .stream()
         //Stream para List: .collect(Collectors.toList())
 
         //Transforma toda a lista em stream, usa o map para usar a função em toda a stream, depois converte a stream para list e armazena em uma lista de Strings
-        List<String> names = list.stream().map(func).collect(Collectors.toList());
+        List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
 
         names.forEach(System.out::println);
 
