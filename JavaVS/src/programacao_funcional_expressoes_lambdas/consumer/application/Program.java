@@ -19,7 +19,7 @@ public class Program {
         list.add(new Product("HD case", 80.90));
         list.add(new Product("Mouse", 50.00));
 
-        list.forEach(Product::staticPriceUpdate); //Usando o método da classe sem uma instância 
+        list.forEach(Product::nonStaticPriceUpdate); 
 
         list.forEach(System.out::println);
 
