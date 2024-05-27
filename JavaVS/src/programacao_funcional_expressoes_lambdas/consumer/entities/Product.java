@@ -1,4 +1,4 @@
-package programacao_funcional_expressoes_lambdas.predicate.entities;
+package programacao_funcional_expressoes_lambdas.consumer.entities;
 
 public class Product {
     
@@ -37,7 +37,7 @@ public class Product {
     
     @Override
     public String toString() {
-        return "Product name = " + name + ", price = " + String.format("%.2f", price) ;
+        return "Product [name=" + name + ", price=" + price + "]";
     }
 
     
